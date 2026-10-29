@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "udm-schedules"
+version = "1.0.0"
+description = "Entropic and Wasserstein sampling schedules for uniform discrete diffusion models"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1",
+    "numpy",
+    "scipy",
+    "tqdm",
+    "matplotlib",
+    "ml_collections",
+    "pyyaml",
+]
+
+[tool.setuptools]
+packages = ["udm_schedules"]
